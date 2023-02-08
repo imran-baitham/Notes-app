@@ -15,6 +15,8 @@ export { RiBubbleChartLine } from "@react-icons/all-files/ri/RiBubbleChartLine";
 export { AiOutlineSetting } from "@react-icons/all-files/ai/AiOutlineSetting"; // setting
 export { FiLogOut } from "@react-icons/all-files/fi/FiLogOut"; // Log out
 export { HiMenuAlt2 } from "@react-icons/all-files/hi/HiMenuAlt2"; // menu
+export { FaWordpressSimple } from "@react-icons/all-files/fa/FaWordpressSimple"; // W - word
+
 
 // ======= { Default Icons Not Used } =======
 export { BsBell } from "@react-icons/all-files/bs/BsBell";
