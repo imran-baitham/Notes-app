@@ -1,3 +1,30 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@800&family=Montserrat:wght@400;600;700&family=Roboto:wght@100&family=Solitreo&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+@layer base {
+  #__next {
+    @apply contents;
+  }
+
+  .container_div {
+    @apply max-w-[1200px] xl:max-w-[1350px] mx-auto pl-[1rem] pr-[1rem]
+  }
+}
