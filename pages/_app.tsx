@@ -1,3 +1,4 @@
+import { AppShell } from '@/components'
 import { Context } from '@/context'
 import '@/styles/globals.css'
 import type { AppProps } from 'next/app'
@@ -12,9 +13,9 @@ export default function App({ Component, pageProps }: AppProps) {
   useEffect(() => {
     const sessionToken = true
     if (sessionToken) {
-      router.push('/dashboard')
+      // router.push('/dashboard')
     } else {
-      router.push('/')
+      // router.push('/')
     }
     // eslint-disable-next-line
   }, [])
@@ -22,7 +23,9 @@ export default function App({ Component, pageProps }: AppProps) {
   return (
     <>
       <Context.Provider value={{ open, setOpen }}>
-        <Component {...pageProps} />
+        <AppShell>
+          <Component {...pageProps} />
+        </AppShell>
       </Context.Provider>
     </>
   )
